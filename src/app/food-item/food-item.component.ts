@@ -4,7 +4,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   selector: 'custom-food-item',
   template: `
     <p>
-      food-item works! v.3
+      food-item works! v.4
     </p>
   `,
   styles: [],

@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <title>food-item</title>
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <style>
       .ciao {
         color: red;
@@ -9,10 +15,14 @@
     </style>
   </head>
   <body>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/gh/gioboa/angular-mfe/elements/food-item.js"
-    ></script>
+    <script>
+      javascript: (function () {
+        var a = document.createElement("script");
+        a.src =
+          "//rawgithub.com/gioboa/angular-mfe/master/elements/food-item.js";
+        document.getElementsByTagName("head")[0].appendChild(a);
+      })();
+    </script>
     <food-item></food-item>
   </body>
 </html>
