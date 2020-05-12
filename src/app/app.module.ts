@@ -9,7 +9,7 @@ import { FoodItemComponent } from './food-item/food-item.component';
   entryComponents: [FoodItemComponent],
 })
 export class AppModule {
-  constructor(private injector: Injector) {
+  constructor(injector: Injector) {
     const el = createCustomElement(FoodItemComponent, { injector });
     customElements.define('food-item', el);
   }

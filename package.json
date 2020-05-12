@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "serve": "http-server elements",
+    "serve": "http-server -c-1 elements",
     "build": "ng build --prod --output-hashing none",
     "build:elements": "ng build --prod --output-hashing none && node concatenate.js"
   },
